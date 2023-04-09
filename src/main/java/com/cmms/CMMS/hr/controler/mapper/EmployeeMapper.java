@@ -16,6 +16,6 @@ public abstract class EmployeeMapper {
     public abstract Employee toEntity(EmployeeDto employeeDto);
     public abstract EmployeeDto toDto(Optional<Employee> employee);
     public abstract List<EmployeeDto> toDtoList(List<Employee> employeeList);
-    public abstract List<EmployeeDto> toBasicDtoList(List<Employee> employeeList);
+
 
 }

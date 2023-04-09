@@ -17,7 +17,6 @@ import java.util.Optional;
 @RequestMapping("/employees")
 @Slf4j
 public class EmployeeController {
-
     private final EmployeeService employeeService;
     private final EmployeeMapper employeeMapper;
 
@@ -26,11 +25,12 @@ public class EmployeeController {
         this.employeeService = employeeService;
         this.employeeMapper = employeeMapper;
     }
-
+    @GetMapping
     public List<EmployeeDto> getAll() {
 
         return  employeeMapper.toDtoList(employeeService.findAll());
     }
+
 
     @GetMapping("/{id}")
     public EmployeeDto find(@PathVariable("id") Integer id) {

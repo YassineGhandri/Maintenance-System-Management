@@ -43,4 +43,5 @@ public class WorkRequest extends GenericEntity {
     @JoinColumn(name = "asset", nullable = false)
     private Asset asset;
 
+
 }

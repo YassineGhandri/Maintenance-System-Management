@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/work_request")
+@RequestMapping("/work_requests")
 @Slf4j
 public class WorkRequestController {
     private WorkRequestService workRequestService;
